@@ -34,8 +34,8 @@ class Base(ABC):
         extensions=None,
         **kwargs,
     ):
-        self.model_weights = f"{model_name}.bin"
-        self.model_structure = f"{model_name}.xml"
+        self.model_weights = "/app/models/face-detection-adas-0001.bin"
+        self.model_structure = "/app/models/face-detection-adas-0001.xml"
         assert (
             Path(self.model_weights).absolute().exists()
             and Path(self.model_structure).absolute().exists()
